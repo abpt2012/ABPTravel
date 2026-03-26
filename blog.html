@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body class="bg-light">
+    <section class="bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container">
+                    <a class="navbar-brand fw-bold fs-3" href="travelguide.html">
+                        <img src="ABPTravel_logo.png" width="75px" height="75px" class="me-2">ABPTravel
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="states.html" role="button" data-bs-toggle="dropdown">Regions</a>
+                                <ul class="dropdown-menu bg-dark border border-white">
+                                    <li><a class="dropdown-item text-white bg-transparent" href="states.html">States</a></li>
+                                    <li><a class="dropdown-item text-white bg-transparent" href="divisions.html">Divisions</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link px-3" href="populardestinations.html">Popular Destinations</a></li>
+                            <li class="nav-item"><a class="nav-link px-3" href="food.html">Food / Cuisine</a></li>
+                            <li class="nav-item"><a class="nav-link px-3" href="blog.html">Travel Blog</a></li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link px-3" href="#" data-bs-toggle="modal" data-bs-target="#logIn">Login</a></li>
+                            <li class="nav-item ms-2"><a class="nav-link btn btn-dark rounded-2 px-4" href="#" data-bs-toggle="modal" data-bs-target="#signUp">Sign up</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+</section>
+
+<div class="modal fade" id="logIn">
+            <div class="modal-dialog modal-md modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Log into your Account</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-4">
+                            <label class="form-label fw-semibold">Username / Email</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-white"><i class="bi bi-person"></i></span>
+                                <input type="text" class="form-control" placeholder="Type your username / email">
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold">Password</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-white"><i class="bi bi-lock"></i></span>
+                                <input type="password" class="form-control" placeholder="Type your passwword">
+                            </div>
+                        </div>
+                        </form>
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">
+                            Log In
+                        </button>
+                    </div>
+                    <div class="modal-footer">
+                        <p>Don't have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#signUp" style="text-decoration: none;">Sign Up Now</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="signUp">
+            <div class="modal-dialog modal-md modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Create an Account</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-4">
+                                <label class="form-label fw-semibold">Username / Email</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-white"><i class="bi bi-person"></i></span>
+                                    <input type="text" class="form-control" placeholder="Type your username / email">
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold">Password</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-white"><i class="bi bi-lock"></i></span>
+                                    <input type="password" class="form-control" placeholder="Type your passwword">
+                                </div>
+                            </div>
+                        </form>
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">
+                            Sign Up
+                        </button>
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <p>Already have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#logIn" style="text-decoration: none;">Login</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="container mt-5" style="width: 1200px;">
+        <div class="row g-5">
+            
+            <div class="col-lg-8">
+                <img src="shwedagonpagodacarousel1.jpg" class="img-fluid rounded mb-3 w-100" style="height: 400px; object-fit: cover; background-image: center;" alt="image">
+                <h1 class="fw-bold mb-3">Top 10 Must-Visit Places in Myanmar for First-Time Travellers</h1>
+                <p class="text-secondary mb-4">Are you new to Myanmar and have no idea where to visit first? Well, no worry my friend, as this complete guide will show you the Top 10 must-visit destinations in Myanmar that will bring you nothing but enjoyment.</p>
+                
+                <div class="d-flex align-items-center">
+                    <img src="profile1.jpg" class="rounded-circle" width="30" height="30" alt="Author">
+                    <p class="ms-2 fw-bold p-0 m-0" style="font-size: 14px;">Aung Bhone Pyae Thaw</p>
+                    <p class="ms-2 text-secondary ps-2 p-0 m-0" style="border-left: #a2adb5 solid 2px; font-size: 14px;">Myanmar Citizen, Trip Advising Expert</p>
+                    <p class="ms-3 text-secondary ps-2 p-0 m-0" style="border-left: #a2adb5 solid 2px; font-size: 14px;">March 23, 2026 - 5 min</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="rounded p-4 text-white mb-4 d-flex align-items-center bg-dark">
+                    <h3 class="fw-bold mb-0">Trending Articles<br>on ABPTravel</h3>
+                </div>
+
+                <div class="d-flex mb-4">
+                    <img src="ngapalibeach.jpg" class="rounded me-3" style="width: 120px; object-fit: cover;" alt="image">
+                    <div class="d-flex flex-column justify-content-center">
+                        <h6 class="fw-bold mb-1">Best Beaches in Myanmar You Should Visit At Least Once</h6>
+                        <p class="text-secondary mb-1" style="font-size: 14px;">February 19, 2026 - 5 min</p>
+                        <div><span class="badge bg-light text-primary border">Thaw Bhone Pyae</span></div>
+                    </div>
+                </div>
+
+                <div class="d-flex mb-4">
+                    <img src="food.webp" class="rounded me-3" style="width: 120px; object-fit: cover;" alt="image">
+                    <div class="d-flex flex-column justify-content-center">
+                        <h6 class="fw-bold mb-1">Famous Local Foods from Different Regions of Myanmar</h6>
+                        <p class="text-secondary mb-1" style="font-size: 14px;">January 23, 2026 - 3 min</p>
+                        <div><span class="badge bg-light text-primary border">Hsu Yati Naing</span></div>
+                    </div>
+                </div>
+
+                <div class="d-flex mb-4">
+                    <img src="language.webp" class="rounded me-3" style="width: 120px; object-fit: cover;" alt="image">
+                    <div class="d-flex flex-column justify-content-center">
+                        <h6 class="fw-bold mb-1">A Look at Myanmar's Language and Everyday Communication</h6>
+                        <p class="text-secondary mb-1" style="font-size: 14px;">March 17, 2026 - 8 min</p>
+                        <div><span class="badge bg-light text-primary border">Bhone Htet Paing Soe</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5 pt-4">
+        <h3 class="fw-bold mb-4">Most popular posts</h3>
+        
+        <div class="row g-4 mb-4">
+            
+            <div class="col-md-4">
+                <div class="card h-100 border-0 bg-light">
+                    <img src="history.jpg" class="card-img-top rounded mb-2" style="height: 270px; object-fit: cover;" alt="image">
+                    <div class="card-body px-0 pt-2">
+                        <p class="text-secondary mb-1" style="font-size: 14px;">March 6, 2026 - 10 min</p>
+                        <h5 class="card-title fw-bold">History of Myanmar in a Simple Timeline</h5>
+                        <p class="card-text text-muted small">Learn about the history of Myanmar with a short, simple timeline that is easy to follow. We'll take you through its first years, wars, and important events that shaped Myanmar to its current state.</p>
+                        <div class="d-flex align-items-center mt-3">
+                            <img src="profile1.jpg" class="rounded-circle" style="width: 30px; height: 30px;">
+                            <div class="ms-2">
+                                <p class="fw-bold p-0 m-0" style="font-size: 14px;">Aung Bhone Pyae Thaw</p>
+                                <p class="text-secondary p-0 m-0" style="font-size: 12px">Trip Advising Expert</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 border-0 bg-light">
+                    <img src="festival.jpg" class="card-img-top rounded mb-2" style="height: 270px; object-fit: cover;" alt="image">
+                    <div class="card-body px-0 pt-2">
+                        <p class="text-secondary mb-1" style="font-size: 14px;">February 28, 2026 - 8 min</p>
+                        <h5 class="card-title fw-bold">Festivals in Myanmar: When and Where to Experience Them</h5>
+                        <p class="card-text text-muted small">Learn about Myanmar’s festivals and discover when and where they are celebrated across the country.</p>
+                        <div class="d-flex align-items-center mt-3">
+                            <img src="profile2.jfif" class="rounded-circle" style="width: 30px; height: 30px;">
+                            <div class="ms-2">
+                                <p class="fw-bold p-0 m-0" style="font-size: 14px;">Ryan Smith</p>
+                                <p class="text-secondary p-0 m-0" style="font-size: 12px">Podcast Creator</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 border-0 bg-light">
+                    <img src="pickpocket.jpeg" class="card-img-top rounded mb-2" style="height: 270px; object-fit: cover;" alt="image">
+                    <div class="card-body px-0 pt-2">
+                        <p class="text-secondary mb-1" style="font-size: 14px;">December 28, 2025 - 5 min</p>
+                        <h5 class="card-title fw-bold">Safety Tips for Travelling Around Myanmar</h5>
+                        <p class="card-text text-muted small">Get simple and useful safety tips for travelling around Myanmar, including how to stay safe, what to watch out for, and how to prepare for your trip.</p>
+                        <div class="d-flex align-items-center mt-3">
+                            <img src="profile3.jpg" class="rounded-circle" style="width: 30px; height: 30px;">
+                            <div class="ms-2">
+                                <p class="fw-bold p-0 m-0" style="font-size: 14px;">Abdullah Kumar</p>
+                                <p class="text-secondary p-0 m-0" style="font-size: 12px">Social Media Influencer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="row g-4">
+            
+            <div class="col-md-4">
+                <div class="card h-100 border-0 bg-light">
+                    <img src="festival.jpg" class="card-img-top rounded mb-2" style="height: 270px; object-fit: cover;" alt="image">
+                    <div class="card-body px-0 pt-2">
+                        <p class="text-secondary mb-1" style="font-size: 14px;">February 28, 2026 - 8 min</p>
+                        <h5 class="card-title fw-bold">Festivals in Myanmar: When and Where to Experience Them</h5>
+                        <p class="card-text text-muted small">Learn about Myanmar’s festivals and discover when and where they are celebrated across the country.</p>
+                        <div class="d-flex align-items-center mt-3">
+                            <img src="profile2.jfif" class="rounded-circle" style="width: 30px; height: 30px;">
+                            <div class="ms-2">
+                                <p class="fw-bold p-0 m-0" style="font-size: 14px;">Ryan Smith</p>
+                                <p class="text-secondary p-0 m-0" style="font-size: 12px">Podcast Creator</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 border-0 bg-light">
+                    <img src="pickpocket.jpeg" class="card-img-top rounded mb-2" style="height: 270px; object-fit: cover;" alt="image">
+                    <div class="card-body px-0 pt-2">
+                        <p class="text-secondary mb-1" style="font-size: 14px;">December 28, 2025 - 5 min</p>
+                        <h5 class="card-title fw-bold">Safety Tips for Travelling Around Myanmar</h5>
+                        <p class="card-text text-muted small">Get simple and useful safety tips for travelling around Myanmar, including how to stay safe, what to watch out for, and how to prepare for your trip.</p>
+                        <div class="d-flex align-items-center mt-3">
+                            <img src="profile3.jpg" class="rounded-circle" style="width: 30px; height: 30px;">
+                            <div class="ms-2">
+                                <p class="fw-bold p-0 m-0" style="font-size: 14px;">Abdullah Kumar</p>
+                                <p class="text-secondary p-0 m-0" style="font-size: 12px">Social Media Influencer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 border-0 bg-light">
+                    <img src="history.jpg" class="card-img-top rounded mb-2" style="height: 270px; object-fit: cover;" alt="image">
+                    <div class="card-body px-0 pt-2">
+                        <p class="text-secondary mb-1" style="font-size: 14px;">March 6, 2026 - 10 min</p>
+                        <h5 class="card-title fw-bold">History of Myanmar in a Simple Timeline</h5>
+                        <p class="card-text text-muted small">Learn about the history of Myanmar with a short, simple timeline that is easy to follow. We'll take you through its first years, wars, and important events that shaped Myanmar to its current state.</p>
+                        <div class="d-flex align-items-center mt-3">
+                            <img src="profile1.jpg" class="rounded-circle" style="width: 30px; height: 30px;">
+                            <div class="ms-2">
+                                <p class="fw-bold p-0 m-0" style="font-size: 14px;">Aung Bhone Pyae Thaw</p>
+                                <p class="text-secondary p-0 m-0" style="font-size: 12px">Trip Advising Expert</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<footer class="bg-dark text-light pt-5 pb-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4 mb-md-0">
+                <h5 class="fw-bold mb-3">ABPTravel</h5>
+                <p>Your go-to website for everything related to travelling in Myanmar.</p>
+            </div>
+            <div class="col-md-4 mb-4 mb-md-0">
+                <h5 class="fw-bold mb-3">Quick Links</h5>
+                <ul style="list-style: none;" class="p-0">
+                    <li><a href="travelguide.html" class="text-light text-decoration-none">Homepage</a></li>
+                    <li><a href="states.html" class="text-light text-decoration-none">States</a></li>
+                    <li><a href="divisions.html" class="text-light text-decoration-none">Divisions</a></li>
+                    <li><a href="populardestinations.html" class="text-light text-decoration-none">Popular Destinations</a></li>
+                    <li><a href="food.html" class="text-light text-decoration-none">Food / Cuisine</a></li>
+                    <li><a href="blog.html" class="text-light text-decoration-none">Travel Blog</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5 class="fw-bold mb-3">Connect With Us</h5>
+                <p class="mt-3">Email: abptravel2012@gmail.com</p>
+            </div>
+        </div>
+        <hr class="bg-light">
+        <div class="text-center">
+            <p class="mb-0">© 2026 ABPTravel. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

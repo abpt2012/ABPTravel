@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .carousel-caption{
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<section class="bg-dark" style="background-image: url(myanmarmaphero.png); background-size: cover; background-position: center; min-height: 100vh;">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container">
+                    <a class="navbar-brand fw-bold fs-3" href="travelguide.html">
+                        <img src="ABPTravel_logo.png" width="75px" height="75px" class="me-2">ABPTravel
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="states.html" role="button" data-bs-toggle="dropdown">Regions</a>
+                                <ul class="dropdown-menu bg-dark border border-white">
+                                    <li><a class="dropdown-item text-white bg-transparent" href="states.html">States</a></li>
+                                    <li><a class="dropdown-item text-white bg-transparent" href="divisions.html">Divisions</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link px-3" href="populardestinations.html">Popular Destinations</a></li>
+                            <li class="nav-item"><a class="nav-link px-3" href="food.html">Food / Cuisine</a></li>
+                            <li class="nav-item"><a class="nav-link px-3" href="blog.html">Travel Blog</a></li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link px-3" href="#" data-bs-toggle="modal" data-bs-target="#logIn">Login</a></li>
+                            <li class="nav-item ms-2"><a class="nav-link btn btn-dark rounded-2 px-4" href="#" data-bs-toggle="modal" data-bs-target="#signUp">Sign up</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container d-flex align-items-center" style="min-height: 90vh;">
+                <div>
+                    <h1 class="display-3 fw-bold text-white mb-5">Learn more about the different divisions<br> of <span class="text-danger">My</span><span class="text-success">a</span>n<span class="text-success">m</span><span class="text-warning">ar</span></h1>
+                    <p class="fs-5 text-white">Take a look at all the divisions that exist in Myanmar, including their location on Myanmar's map and other important information.</p>
+                </div>
+            </div>
+</section>
+
+<div class="modal fade" id="logIn">
+            <div class="modal-dialog modal-md modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Log into your Account</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-4">
+                            <label class="form-label fw-semibold">Username / Email</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-white"><i class="bi bi-person"></i></span>
+                                <input type="text" class="form-control" placeholder="Type your username / email">
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold">Password</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-white"><i class="bi bi-lock"></i></span>
+                                <input type="password" class="form-control" placeholder="Type your passwword">
+                            </div>
+                        </div>
+                        </form>
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">
+                            Log In
+                        </button>
+                    </div>
+                    <div class="modal-footer">
+                        <p>Don't have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#signUp" style="text-decoration: none;">Sign Up Now</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="signUp">
+            <div class="modal-dialog modal-md modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Create an Account</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-4">
+                                <label class="form-label fw-semibold">Username / Email</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-white"><i class="bi bi-person"></i></span>
+                                    <input type="text" class="form-control" placeholder="Type your username / email">
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold">Password</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-white"><i class="bi bi-lock"></i></span>
+                                    <input type="password" class="form-control" placeholder="Type your passwword">
+                                </div>
+                            </div>
+                        </form>
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">
+                            Sign Up
+                        </button>
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <p>Already have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#logIn" style="text-decoration: none;">Login</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="py-5 bg-light">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h2 class="mb-4">Divisions</h2>
+                        <p class="mb-4">Myanmar is made up of seven divisions, which include many of the country’s major cities and important areas for travel and daily life. These regions feature a mix of busy urban centres, historic sites, and local communities, offering a broader look at how people live across Myanmar.</p>
+                        <!--<button class="btn btn-dark rounded-5 p-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#">Learn More</button>-->
+                    </div>
+                    <div class="col-lg-6 pb-5">
+                        <div class="rounded-4 p-5" style="height: 400px; background-image: url(myanmardivisions.jpg); background-size: cover; background-position: center;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="container">
+                <h2 class="mt-5 mb-4 text-center">All Divisions</h2>
+                <div class="mt-5 d-flex flex-wrap justify-content-center" style="gap: 30px;">
+                    <div class="mb-4">
+                        <div class="card" style="width: 400px;">
+                            <img src="ayeyarwady.jpg" class="card-img-top" style="height: 225px; object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">Ayeyarwady</h5>
+                                <p class="card-text mb-4">Ayeyarwady Region is known for its rivers and relaxed coastal areas with a slow, laid-back feel. Ngwe Saung Beach and Chaungtha Beach are popular for easy beach trips and peaceful seaside views.</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ayeyarwady">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="card" style="width: 400px;">
+                            <img src="bago.png" class="card-img-top" style="height: 225px; object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">Bago</h5>
+                                <p class="card-text mb-4">Bago Region is a historically rich area filled with impressive pagodas and ancient cities just a short trip from Yangon. Shwemawdaw Pagoda is the real highlight, known as one of the tallest pagodas in the country.</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ayeyarwady">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <div class="card" style="width: 400px;">
+                            <img src="magway.jpg" class="card-img-top" style="height: 225px; object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">Magway</h5>
+                                <p class="card-text mb-4">Magway Region offers dry landscapes, quiet towns, and a peaceful local feel along the Ayeyarwady River. Myathalun Pagoda is its most famous landmark, while Minbu is known for its calm riverside daily life.</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ayeyarwady">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="card" style="width: 400px;">
+                            <img src="temples_bagan.webp" class="card-img-top" style="height: 225px; object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">Mandalay</h5>
+                                <p class="card-text mb-4">Mandalay Region is the cultural heart of Myanmar, rich in history, tradition, and famous landmarks. Mandalay Palace and Bagan are known for their ancient temples, especially the thousands of pagodas across Bagan, and its iconic sunrise views.</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ayeyarwady">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="card" style="width: 400px;">
+                            <img src="sagaing.jpg" class="card-img-top" style="height: 225px; object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">Sagaing</h5>
+                                <p class="card-text mb-4">Sagaing Region is known for its calm, spiritual feel and river views along the Ayeyarwady. The Sagaing Hills are filled with pagodas and monasteries, while nearby city Monywa is known for its striking Buddha statues.</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ayeyarwady">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="card" style="width: 400px;">
+                            <img src="tanintharyi.jpg" class="card-img-top" style="height: 225px; object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">Tanintharyi</h5>
+                                <p class="card-text mb-4">Tanintharyi Region offers long coastlines, tropical islands, and rich marine life with clear waters and soft sandy beaches. The Myeik Archipelago and Dawei are known for beaches and quiet seaside views.</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ayeyarwady">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="card" style="width: 400px;">
+                            <img src="shwedagonpagodacarousel1.jpg" class="card-img-top" style="height: 225px; object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">Yangon</h5>
+                                <p class="card-text mb-4">Yangon Region is the busiest part of Myanmar, blending colonial buildings with modern city life and busy streets. Shwedagon Pagoda and Sule Pagoda stand at the centre of its culture and history.</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ayeyarwady">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- modals for states -->
+
+<div class="modal fade" id="ayeyarwady">
+    <div class="modal-dialog modal-md modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Ayeyarwady</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <h5>A More Detailed Summary of Ayeyarwady</h5>
+                <p>Located in the south of Myanmar, Ayeyarwady Region is known for its wide river landscapes, coastal areas, and relaxed way of life. Shaped by the Ayeyarwady River, the region features open views, small towns, and a strong connection to water and daily local life. Visitors can enjoy quiet beach trips, explore riverside communities, and experience a slower, more peaceful atmosphere. With its simple charm and easygoing feel, Ayeyarwady offers a refreshing escape from busier parts of the country.</p>
+                
+                <h5>Popular Destinations</h5>
+                <div id="ayeyarwady_carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#ayeyarwady_carousel" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#ayeyarwady_carousel" data-bs-slide-to="1"></button>
+                    </div>
+                    <div class="carousel-inner rounded-4" style="height: 30vh;">
+                        <div class="carousel-item active h-100">
+                            <img src="chaungthar.jpg" style="width: 100%; height: 100%; object-fit: cover;" alt="shwedagon pagoda">
+                            <div class="carousel-caption">
+                                <h6 class="fw-bold">Chaung Thar Beach</h6>
+                                <p>Pathein Township, Ayeyarwady Division</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item h-100">
+                            <img src="ngwesaung.jpg" style="width: 100%; height: 100%; object-fit: cover;" alt="temples">
+                            <div class="carousel-caption">
+                                <h6 class="fw-bold">Ngwe Saung Beach</h6>
+                                <p>Pathein Township, Ayeyarwady Division</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#ayeyarwady_carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#ayeyarwady_carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+                <h5 class="mt-3 mb-3">Ayeyarwady's Location On The Map:</h5>
+                <img src="ayeyarwadymap.png" class="img-fluid border border-dark border-4 rounded-3">
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+
+        
+
+<footer class="bg-dark text-light pt-5 pb-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4 mb-md-0">
+                <h5 class="fw-bold mb-3">ABPTravel</h5>
+                <p>Your go-to website for everything related to travelling in Myanmar.</p>
+            </div>
+            <div class="col-md-4 mb-4 mb-md-0">
+                <h5 class="fw-bold mb-3">Quick Links</h5>
+                <ul style="list-style: none;" class="p-0">
+                    <li><a href="travelguide.html" class="text-light text-decoration-none">Homepage</a></li>
+                    <li><a href="states.html" class="text-light text-decoration-none">States</a></li>
+                    <li><a href="divisions.html" class="text-light text-decoration-none">Divisions</a></li>
+                    <li><a href="populardestinations.html" class="text-light text-decoration-none">Popular Destinations</a></li>
+                    <li><a href="food.html" class="text-light text-decoration-none">Food / Cuisine</a></li>
+                    <li><a href="blog.html" class="text-light text-decoration-none">Travel Blog</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5 class="fw-bold mb-3">Connect With Us</h5>
+                <p class="mt-3">Email: abptravel2012@gmail.com</p>
+            </div>
+        </div>
+        <hr class="bg-light">
+        <div class="text-center">
+            <p class="mb-0">© 2026 ABPTravel. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
