@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body class="bg-light">
+    <section class="bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container">
+                    <a class="navbar-brand fw-bold fs-3" href="index.html">
+                        <img src="Images/ABPTravel_logo.png" width="75px" height="75px" class="me-2">ABPTravel
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="states.html" role="button" data-bs-toggle="dropdown">Regions</a>
+                                <ul class="dropdown-menu bg-dark border border-white">
+                                    <li><a class="dropdown-item text-white bg-transparent" href="states.html">States</a></li>
+                                    <li><a class="dropdown-item text-white bg-transparent" href="divisions.html">Divisions</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link px-3" href="populardestinations.html">Popular Destinations</a></li>
+                            <li class="nav-item"><a class="nav-link px-3" href="food.html">Food / Cuisine</a></li>
+                            <li class="nav-item"><a class="nav-link px-3" href="blog.html">Travel Blog</a></li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link px-3" href="#" data-bs-toggle="modal" data-bs-target="#logIn">Login</a></li>
+                            <li class="nav-item ms-2"><a class="nav-link btn btn-dark rounded-2 px-4" href="#" data-bs-toggle="modal" data-bs-target="#signUp">Sign up</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+</section>
+
+<div class="modal fade" id="logIn">
+            <div class="modal-dialog modal-md modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Log into your Account</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-4">
+                            <label class="form-label fw-semibold">Username / Email</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-white"><i class="bi bi-person"></i></span>
+                                <input type="text" class="form-control" placeholder="Type your username / email">
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold">Password</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-white"><i class="bi bi-lock"></i></span>
+                                <input type="password" class="form-control" placeholder="Type your passwword">
+                            </div>
+                        </div>
+                        </form>
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">
+                            Log In
+                        </button>
+                    </div>
+                    <div class="modal-footer">
+                        <p>Don't have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#signUp" style="text-decoration: none;">Sign Up Now</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="signUp">
+            <div class="modal-dialog modal-md modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Create an Account</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-4">
+                                <label class="form-label fw-semibold">Username / Email</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-white"><i class="bi bi-person"></i></span>
+                                    <input type="text" class="form-control" placeholder="Type your username / email">
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold">Password</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-white"><i class="bi bi-lock"></i></span>
+                                    <input type="password" class="form-control" placeholder="Type your passwword">
+                                </div>
+                            </div>
+                        </form>
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">
+                            Sign Up
+                        </button>
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <p>Already have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#logIn" style="text-decoration: none;">Login</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="container-fluid px-5 mt-5">
+        <img src="Images/shwedagonpagodacarousel1.jpg" class="img-fluid mb-3 rounded-4 w-100" style="height: 525px; object-fit: cover; background-image: center;" alt="image">
+            <div class="row g-5">
+                <div class="col-lg-10">
+                    <p class="text-secondary mt-2"><a href="blog.html" class="text-decoration-none text-secondary">Blog</a> > <a href="article1.html" class="text-decoration-none text-secondary">Top 5 Must-Visit Places in Myanmar for First-Time Travellers</a></p>
+                    <h1 class="fw-bold mb-3">Top 5 Must-Visit Places in Myanmar for First-Time Travellers</h1>
+                    <div class="d-flex align-items-center mt-4">
+                        <img src="Images/profile1.jpg" class="rounded-circle" width="30" height="30" alt="Author">
+                        <p class="ms-2 fw-bold p-0 m-0" style="font-size: 14px;">Aung Bhone Pyae Thaw</p>
+                        <p class="ms-2 text-secondary ps-2 p-0 m-0" style="border-left: #a2adb5 solid 2px; font-size: 14px;">Myanmar Citizen, Trip Advising Expert</p>
+                        <p class="ms-2 text-secondary ps-2 p-0 m-0" style="border-left: #a2adb5 solid 2px; font-size: 14px;">March 23, 2026 - 5 min</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-5">
+                <div class="col-lg-9">
+                    <p class="mt-4" style="font-size: 14px;">Are you new to Myanmar and have no idea where to visit first? Well, no worry my friend, as this complete guide will show you the Top 5 must-visit destinations in Myanmar that will bring you nothing but enjoyment.</p>
+                    <p style="font-size: 14px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque itaque minus soluta enim, impedit est quidem. Facere temporibus dolor reprehenderit nihil nisi commodi saepe, at, suscipit earum esse, placeat maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus obcaecati iste maiores dolorum pariatur perferendis corrupti rerum voluptatibus! Eum ullam ut laudantium fugit hic qui obcaecati laboriosam facere esse sint!</p>
+                    <p style="font-size: 14px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quibusdam, omnis est numquam sapiente itaque repellat ipsam? Fugit, quam delectus quisquam dolore natus, nisi nihil ipsa mollitia et dignissimos ullam magni, exercitationem ex quo magnam autem deserunt harum corporis minus! Ut iure iste ad ullam. Vitae nam perspiciatis quae nisi.</p>
+                    <p style="font-size: 14px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque nisi minima illum et impedit tempore, consequatur molestiae vitae rem aliquid esse. Quos rem fugit aperiam aliquam, exercitationem hic eum quae officiis ducimus in error obcaecati laudantium animi sed ullam dolores natus ab vero alias doloremque beatae molestias! Odit laborum, et molestiae provident libero necessitatibus exercitationem saepe optio inventore, assumenda similique, debitis cumque rerum deserunt nostrum? Laborum assumenda rem hic adipisci delectus esse iure quaerat eos!</p>
+                    <hr class="mt-5">
+                    <h3 class="mt-5 mb-4">1. Shwedagon Pagoda</h3>
+                    <img src="Images/shwedagonpagoda3.png" class="img-fluid mb-3 rounded-4 w-100" style="height: 400px; object-fit: cover; background-image: center;" alt="image">
+                    <p style="font-size: 14px;" class="text-muted">Source: Wallpaper Cave</p>
+                    <p style="font-size: 14px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio harum earum perferendis, tempora saepe quam similique possimus quos officiis quasi! Provident eligendi deserunt cum, aliquam exercitationem officiis veritatis, repudiandae nemo quibusdam, rerum labore possimus nam quas. Porro dolore saepe amet.</p>
+                    <p style="font-size: 14px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex molestiae earum harum tempora. Voluptatum corporis et iure dolore nisi assumenda saepe esse cumque, ipsum alias nihil provident ad quidem est animi amet officiis, libero nostrum laboriosam doloribus repellat totam laudantium molestias ut. Numquam itaque facere nostrum accusantium voluptas consectetur quaerat quasi, aliquid voluptatibus ad doloremque, tempore distinctio. Porro quam assumenda numquam ab autem recusandae alias praesentium doloremque nemo quae nostrum dolore facilis accusantium, exercitationem possimus dolorem tempore veritatis harum odio?</p>
+                    <p style="font-size: 14px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus aspernatur quisquam blanditiis eum totam voluptate assumenda, consequatur harum aliquid accusamus consectetur repudiandae hic mollitia perspiciatis soluta provident, ratione amet porro saepe voluptatem suscipit quas quod praesentium non. Architecto ipsam fugiat ex nulla quis! Fuga, perspiciatis tempora ipsam autem cupiditate aspernatur tenetur corporis itaque officia mollitia, culpa iure provident quod nesciunt accusantium eum vitae, nam reiciendis. Nobis, est.</p>
+                    <hr class="mt-5">
+                    <h3 class="mt-5 mb-4">2. Bagan Temples</h3>
+                    <img src="Images/temples_bagan.webp" class="img-fluid mb-3 rounded-4 w-100" style="height: 400px; object-fit: cover; background-image: center;" alt="image">
+                    <p style="font-size: 14px;" class="text-muted">Source: Sommertage</p>
+                    <p style="font-size: 14px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio harum earum perferendis, tempora saepe quam similique possimus quos officiis quasi! Provident eligendi deserunt cum, aliquam exercitationem officiis veritatis, repudiandae nemo quibusdam, rerum labore possimus nam quas. Porro dolore saepe amet.</p>
+                    <p style="font-size: 14px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex molestiae earum harum tempora. Voluptatum corporis et iure dolore nisi assumenda saepe esse cumque, ipsum alias nihil provident ad quidem est animi amet officiis, libero nostrum laboriosam doloribus repellat totam laudantium molestias ut. Numquam itaque facere nostrum accusantium voluptas consectetur quaerat quasi, aliquid voluptatibus ad doloremque, tempore distinctio. Porro quam assumenda numquam ab autem recusandae alias praesentium doloremque nemo quae nostrum dolore facilis accusantium, exercitationem possimus dolorem tempore veritatis harum odio?</p>
+                    <p style="font-size: 14px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus aspernatur quisquam blanditiis eum totam voluptate assumenda, consequatur harum aliquid accusamus consectetur repudiandae hic mollitia perspiciatis soluta provident, ratione amet porro saepe voluptatem suscipit quas quod praesentium non. Architecto ipsam fugiat ex nulla quis! Fuga, perspiciatis tempora ipsam autem cupiditate aspernatur tenetur corporis itaque officia mollitia, culpa iure provident quod nesciunt accusantium eum vitae, nam reiciendis. Nobis, est.</p>
+                    <hr class="mt-5">
+                    <h3 class="mt-5 mb-4">3. Ngapali Beach</h3>
+                    <img src="Images/ngapalibeach.jpg" class="img-fluid mb-3 rounded-4 w-100" style="height: 400px; object-fit: cover; background-image: center;" alt="image">
+                    <p style="font-size: 14px;" class="text-muted">Source: "Grete S R" on Tripadvisor</p>
+                    <p style="font-size: 14px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio harum earum perferendis, tempora saepe quam similique possimus quos officiis quasi! Provident eligendi deserunt cum, aliquam exercitationem officiis veritatis, repudiandae nemo quibusdam, rerum labore possimus nam quas. Porro dolore saepe amet.</p>
+                    <p style="font-size: 14px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex molestiae earum harum tempora. Voluptatum corporis et iure dolore nisi assumenda saepe esse cumque, ipsum alias nihil provident ad quidem est animi amet officiis, libero nostrum laboriosam doloribus repellat totam laudantium molestias ut. Numquam itaque facere nostrum accusantium voluptas consectetur quaerat quasi, aliquid voluptatibus ad doloremque, tempore distinctio. Porro quam assumenda numquam ab autem recusandae alias praesentium doloremque nemo quae nostrum dolore facilis accusantium, exercitationem possimus dolorem tempore veritatis harum odio?</p>
+                    <p style="font-size: 14px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus aspernatur quisquam blanditiis eum totam voluptate assumenda, consequatur harum aliquid accusamus consectetur repudiandae hic mollitia perspiciatis soluta provident, ratione amet porro saepe voluptatem suscipit quas quod praesentium non. Architecto ipsam fugiat ex nulla quis! Fuga, perspiciatis tempora ipsam autem cupiditate aspernatur tenetur corporis itaque officia mollitia, culpa iure provident quod nesciunt accusantium eum vitae, nam reiciendis. Nobis, est.</p>
+                    <hr class="mt-5">
+                    <h3 class="mt-5 mb-4">4. Inle Lake</h3>
+                    <img src="Images/inlelakecarousel1.jpg" class="img-fluid mb-3 rounded-4 w-100" style="height: 400px; object-fit: cover; background-image: center;" alt="image">
+                    <p style="font-size: 14px;" class="text-muted">Source: "Sean Hsu" on Shutterstock</p>
+                    <p style="font-size: 14px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio harum earum perferendis, tempora saepe quam similique possimus quos officiis quasi! Provident eligendi deserunt cum, aliquam exercitationem officiis veritatis, repudiandae nemo quibusdam, rerum labore possimus nam quas. Porro dolore saepe amet.</p>
+                    <p style="font-size: 14px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex molestiae earum harum tempora. Voluptatum corporis et iure dolore nisi assumenda saepe esse cumque, ipsum alias nihil provident ad quidem est animi amet officiis, libero nostrum laboriosam doloribus repellat totam laudantium molestias ut. Numquam itaque facere nostrum accusantium voluptas consectetur quaerat quasi, aliquid voluptatibus ad doloremque, tempore distinctio. Porro quam assumenda numquam ab autem recusandae alias praesentium doloremque nemo quae nostrum dolore facilis accusantium, exercitationem possimus dolorem tempore veritatis harum odio?</p>
+                    <p style="font-size: 14px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus aspernatur quisquam blanditiis eum totam voluptate assumenda, consequatur harum aliquid accusamus consectetur repudiandae hic mollitia perspiciatis soluta provident, ratione amet porro saepe voluptatem suscipit quas quod praesentium non. Architecto ipsam fugiat ex nulla quis! Fuga, perspiciatis tempora ipsam autem cupiditate aspernatur tenetur corporis itaque officia mollitia, culpa iure provident quod nesciunt accusantium eum vitae, nam reiciendis. Nobis, est.</p>
+                    <hr class="mt-5">
+                    <h3 class="mt-5 mb-4">5. Kyaiktiyo Pagoda</h3>
+                    <img src="Images/kyaiktiyocarousel2.webp" class="img-fluid mb-3 rounded-4 w-100" style="height: 400px; object-fit: cover; background-image: center;" alt="image">
+                    <p style="font-size: 14px;" class="text-muted">Source: Dizzy Traveler</p>
+                    <p style="font-size: 14px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio harum earum perferendis, tempora saepe quam similique possimus quos officiis quasi! Provident eligendi deserunt cum, aliquam exercitationem officiis veritatis, repudiandae nemo quibusdam, rerum labore possimus nam quas. Porro dolore saepe amet.</p>
+                    <p style="font-size: 14px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex molestiae earum harum tempora. Voluptatum corporis et iure dolore nisi assumenda saepe esse cumque, ipsum alias nihil provident ad quidem est animi amet officiis, libero nostrum laboriosam doloribus repellat totam laudantium molestias ut. Numquam itaque facere nostrum accusantium voluptas consectetur quaerat quasi, aliquid voluptatibus ad doloremque, tempore distinctio. Porro quam assumenda numquam ab autem recusandae alias praesentium doloremque nemo quae nostrum dolore facilis accusantium, exercitationem possimus dolorem tempore veritatis harum odio?</p>
+                    <p style="font-size: 14px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus aspernatur quisquam blanditiis eum totam voluptate assumenda, consequatur harum aliquid accusamus consectetur repudiandae hic mollitia perspiciatis soluta provident, ratione amet porro saepe voluptatem suscipit quas quod praesentium non. Architecto ipsam fugiat ex nulla quis! Fuga, perspiciatis tempora ipsam autem cupiditate aspernatur tenetur corporis itaque officia mollitia, culpa iure provident quod nesciunt accusantium eum vitae, nam reiciendis. Nobis, est.</p>
+                    <hr class="mt-5">
+                    <p style="font-size: 14px;" class="mt-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatem optio alias corrupti nulla veniam autem excepturi delectus in quaerat ipsum sunt quae culpa maxime vero, distinctio, nam dolores error consectetur ut? Dicta deserunt mollitia, aliquid labore doloremque consectetur libero rerum cupiditate eligendi non iusto sapiente dignissimos, laboriosam aspernatur inventore delectus vel totam repudiandae. Molestias, totam est laboriosam ratione unde a excepturi quisquam. Iusto, facere deserunt? A excepturi ducimus error. Unde modi blanditiis expedita veniam facilis omnis placeat nostrum voluptatem amet. Itaque ex autem nam cum pariatur recusandae ut ducimus veritatis perferendis sint tempore, nobis assumenda praesentium officia veniam quo.</p>
+                    <p style="font-size: 14px;" class="mb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci magni natus nesciunt ut pariatur illum facere eos hic eveniet architecto aperiam illo dolorum quasi totam beatae, ipsa modi, quam reprehenderit sed possimus ullam amet quis labore odit? Soluta, pariatur? Possimus ullam unde placeat iste animi sequi eius consequuntur assumenda cum dolorem culpa eveniet, adipisci rerum mollitia dolore veniam quas? Repellat laudantium cumque praesentium sed, laboriosam voluptates sunt quis nesciunt odit magnam quidem dicta, mollitia asperiores animi quos eius ea illo?</p>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="rounded my-4 d-flex align-items-center">
+                        <h3 class="fw-bold mb-0">Top Articles</h3>
+                    </div>
+
+                    <div class="d-flex mb-4">
+                        <img src="Images/ngapalibeach.jpg" class="rounded me-3" style="width: 120px; object-fit: cover;" alt="image">
+                        <div class="d-flex flex-column justify-content-center">
+                            <h6 class="fw-bold mb-1">Best Beaches in Myanmar You Should Visit At Least Once</h6>
+                            <p class="text-secondary mb-1" style="font-size: 14px;">February 19, 2026 - 5 min</p>
+                            <div><span class="text-primary border rounded px-2 py-1 fw-bold" style="font-size: 12px;">Thaw Bhone Pyae</span></div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex mb-4">
+                        <img src="Images/food.webp" class="rounded me-3" style="width: 120px; object-fit: cover;" alt="image">
+                        <div class="d-flex flex-column justify-content-center">
+                            <h6 class="fw-bold mb-1">Famous Local Foods from Different Regions of Myanmar</h6>
+                            <p class="text-secondary mb-1" style="font-size: 14px;">January 23, 2026 - 3 min</p>
+                            <div><span class="text-primary border rounded px-2 py-1 fw-bold" style="font-size: 12px;">Hsu Yati Naing</span></div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex mb-4">
+                        <img src="Images/language.webp" class="rounded me-3" style="width: 120px; object-fit: cover;" alt="image">
+                        <div class="d-flex flex-column justify-content-center">
+                            <h6 class="fw-bold mb-1">A Look at Myanmar's Language and Everyday Communication</h6>
+                            <p class="text-secondary mb-1" style="font-size: 14px;">March 17, 2026 - 8 min</p>
+                            <div><span class="text-primary border rounded px-2 py-1 fw-bold" style="font-size: 12px;">Bhone Htet Paing Soe</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer class="bg-dark text-light pt-5 pb-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4 mb-md-0">
+                <h5 class="fw-bold mb-3">ABPTravel</h5>
+                <p>Your go-to website for everything related to travelling in Myanmar.</p>
+            </div>
+            <div class="col-md-4 mb-4 mb-md-0">
+                <h5 class="fw-bold mb-3">Quick Links</h5>
+                <ul style="list-style: none;" class="p-0">
+                    <li><a href="index.html" class="text-light text-decoration-none">Homepage</a></li>
+                    <li><a href="states.html" class="text-light text-decoration-none">States</a></li>
+                    <li><a href="divisions.html" class="text-light text-decoration-none">Divisions</a></li>
+                    <li><a href="populardestinations.html" class="text-light text-decoration-none">Popular Destinations</a></li>
+                    <li><a href="food.html" class="text-light text-decoration-none">Food / Cuisine</a></li>
+                    <li><a href="blog.html" class="text-light text-decoration-none">Travel Blog</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5 class="fw-bold mb-3">Connect With Us</h5>
+                <p class="mt-3">Email: abptravel2012@gmail.com</p>
+            </div>
+        </div>
+        <hr class="bg-light">
+        <div class="text-center">
+            <p class="mb-0">© 2026 ABPTravel. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
