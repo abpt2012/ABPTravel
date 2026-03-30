@@ -55,7 +55,79 @@
                             </div>
                         </a>
                     </div>
+        <div class="modal fade text-start" id="logIn">
+            <div class="modal-dialog modal-md modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Log into your Account</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-4">
+                            <label class="form-label fw-semibold">Username / Email</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-white"><i class="bi bi-person"></i></span>
+                                <input type="text" class="form-control" placeholder="Type your username / email">
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold">Password</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-white"><i class="bi bi-lock"></i></span>
+                                <input type="password" class="form-control" placeholder="Type your passwword">
+                            </div>
+                        </div>
+                        </form>
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">
+                            Log In
+                        </button>
+                    </div>
+                    <div class="modal-footer">
+                        <p>Don't have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#signUp" style="text-decoration: none;">Sign Up Now</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade text-start" id="signUp">
+            <div class="modal-dialog modal-md modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Create an Account</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-4">
+                                <label class="form-label fw-semibold">Username / Email</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-white"><i class="bi bi-person"></i></span>
+                                    <input type="text" class="form-control" placeholder="Type your username / email">
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold">Password</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-white"><i class="bi bi-lock"></i></span>
+                                    <input type="password" class="form-control" placeholder="Type your passwword">
+                                </div>
+                            </div>
+                        </form>
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">
+                            Sign Up
+                        </button>
                         
+                    </div>
+                    <div class="modal-footer">
+                        <p>Already have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#logIn" style="text-decoration: none;">Login</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
                     <div class="col-md-6 col-lg-3">
                         <a href="#appetizers" class="text-decoration-none text-dark">
                             <div class="card shadow-sm border-0">
